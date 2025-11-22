@@ -10,15 +10,14 @@
 - [Project Overview](#project-overview)  
 - [Objectives](#objectives)  
 - [Data Description & Time Coverage](#data-description--time-coverage)  
-- [Key Features](#key-features)  
-- [Dashboard Preview](#dashboard-preview)  
+- [Key Features](#key-features)    
 - [Tools & Technologies](#tools--technologies)  
-- [Insights](#insights)  
-  - [Sales Performance](#1-sales-performance-dashboard)  
+- [Insights & Dashboard Preview](#insights--dashboard-preview)  
+  - [Sales Performance](#1-sales-performance-dashboard)
+  - [YTD vs Prior YTD — Month-by-Month Comparison (2023 vs PYTD)](#ytd-vs-prior-ytd--month-by-month-comparison-2023-vs-pytd)   
   - [Customer Performance](#2-customer-performance-dashboard)  
   - [Product Performance](#3-product-performance-dashboard)  
-- [YTD vs Prior YTD — Month-by-Month Comparison (2023 vs PYTD)](#ytd-vs-prior-ytd--month-by-month-comparison-2023-vs-pytd)  
-- [Detailed and Actionable Recommendations](#detailed-and-actionable-recommendations)  
+- [Detailed & Actionable Recommendations](#detailed--actionable-recommendations)  
 - [Conclusion](#conclusion)  
 
 ---
@@ -48,7 +47,7 @@ The goal is to convert transactional data into a concise business story and deli
 - **Dim_Date**: calendar table (Day, Month, Year, IsWeekend, Year-Month, Quarter)
 
 **Time coverage:** **2022 → Q1 2024** (dashboards default to 2023 view).  
-Dashboards include **year slicers (2022, 2023, 2024)** so users can compare any year in the dataset — e.g., 2022 vs 2023, or 2023 vs Q1 2024.
+Dashboards include **year slicers (2022, 2023, 2024)** so users can compare any year in the dataset, e.g., 2022 vs 2023, or 2023 vs Q1 2024.
 
 ---
 
@@ -63,14 +62,6 @@ Dashboards include **year slicers (2022, 2023, 2024)** so users can compare any 
 
 ---
 
-## 🖼 Dashboard Preview
-
-- **Sales Dashboard (overview + YTD vs PYTD comparison):** `./assets/images/sales_dashboard.png`  
-- **Customer Dashboard (top accounts, new vs returning, frequency):** `./assets/images/customer_dashboard.png`  
-- **Product Dashboard (top SKUs, profitability, family analysis):** `./assets/images/product_dashboard.png`
-
----
-
 ## 🛠 Tools & Technologies
 
 - **Power BI Desktop** (visualization & modeling)  
@@ -81,40 +72,19 @@ Dashboards include **year slicers (2022, 2023, 2024)** so users can compare any 
 
 ---
 
-# 📈 Insights
+# 📈 Insights & Dashboard Preview
 
 ## **1. Sales Performance Dashboard**
 
-- **High-level performance:** 2023 closed with **$13.0M in total sales**, **555.7K units sold**, and a **39.6% gross profit margin** — profitability remained firm even as revenue movement fluctuated month-to-month.  
+- **Sales Dashboard (overview + YTD vs PYTD comparison):** ![Sales Dashboard](./sales_dashboard.png)
+
+- **High-level performance:** 2023 closed with **$13.0M in total sales**, **555.7K units sold**, and a **39.6% gross profit margin**, profitability remained firm even as revenue movement fluctuated month-to-month.  
 - **Early-year weakness, mid-year recovery, late-year softness:** January & February underperformed versus prior year, followed by a robust March → June recovery (notably April and June). The second half (July → November) drifted lower, with December slightly positive but insufficient to fully offset earlier declines.  
-- **Weekday-dominant behavior:** **72.1% of orders** occur on weekdays (765 orders) producing **$9.4M** in revenue vs **$3.6M** on weekends — a clear indication of structured, business-oriented purchasing cycles (B2B or project-driven B2C).  
-- **Geographic concentration & opportunities:** **China accounted for $4.01M**, substantially ahead of other markets — this concentration poses risk but also validates focused investments in that market. Several countries produced <$15K, representing low-hanging fruit for expansion.  
+- **Weekday-dominant behavior:** **72.1% of orders** occur on weekdays (765 orders) producing **$9.4M** in revenue vs **$3.6M** on weekends, a clear indication of structured, business-oriented purchasing cycles (B2B or project-driven B2C).  
+- **Geographic concentration & opportunities:** **China accounted for $4.01M**, substantially ahead of other markets. This concentration poses risk but also validates focused investments in that market. Several countries produced <$15K, representing low-hanging fruit for expansion.  
 - **Year-comparison insights (2022 vs 2023 line chart):** the dashboards include a line-chart that plots monthly YTD sales for 2022 and 2023 side-by-side, allowing immediate visual identification of where Plants Co. gained (Mar–Jun 2023) or lost ground (Jan–Feb and Jul–Nov). The slicer allows comparing any available year (2022, 2023, 2024 Q1).
 
----
-
-## **2. Customer Performance Dashboard**
-
-- **Customer base snapshot:** **947 total customers** in the dataset, **668 active** in 2023 and **279 inactive** — the inactive cohort is a clear priority for reactivation.  
-- **High average spend among actives:** active customers averaged **$19.46K each**, indicating that customers who do transact purchase at meaningful volumes.  
-- **Top-account concentration:** revenue is concentrated in a small group — **Labadie Group ($163.1K)** leads, with Hickle Group and Brown & Sons also in the top tier. This provides predictable revenue but increases exposure if a top account weakens.  
-- **Acquisition vs retention dynamics:** returning customers outnumber new customers every month (ex: Nov = 83 returning vs 11 new), which demonstrates excellent retention but underlines slow acquisition velocity.  
-- **Volatile customer growth:** months like **March (+31.9%)** and **November (+27%)** show acquisition or reactivation success, while **January (–10.1%)**, **February (–10%)**, **May (–11.9%)**, and **July (–21.5%)** reveal dips that require steadier marketing and onboarding cadence.  
-- **Frequency & loyalty:** a small cohort drives frequent purchases (Labadie Group: 13 purchases). Many mid-tier customers transact 6–9 times per year — this is the segment to nudge toward higher frequency via programs and automation.
-
----
-
-## **3. Product Performance Dashboard**
-
-- **Revenue & margin balance:** product sales generated **$13.0M** and **$5.15M gross profit**, with **555.7K units sold** and **ASP ≈ $23.39** — a healthy balance of volume and price.  
-- **Top SKUs and balanced mid-tier:** **Veronica prostrata ($80.1K)** tops the list. Several others (e.g., Lecanora muralis, Vulpia microstachys, Eriogonum umbellatum) each contributed >$61K. The mid-band ($47K–$59K) provides portfolio resilience.  
-- **Size & type diversification:** small, medium, and large sizes contributed **36.61% / 29.45% / 33.93%** respectively — this balanced split reduces risk from any one format. Indoor/Outdoor/Landscape split is also near-even, proving cross-segment reach.  
-- **Profit hotspots:** lichen groups (Beard Lichen, Ward’s False G., Rim Lichen) delivered the highest gross profit per group and should be treated as high-priority margin drivers.  
-- **Family-level trends:** **Asteraceae ($1.4M)** leads, followed by Fabaceae and Poaceae — these families are anchor categories for assortment planning.
-
----
-
-## YTD vs Prior YTD — Month-by-Month Comparison (2023 vs PYTD)
+### YTD vs Prior YTD — Month-by-Month Comparison (2023 vs PYTD)
 
 - **January:** 2023 YTD = **$1.07M** vs PYTD = **$1.19M** → **Down $0.12M** (weaker start).  
 - **February:** 2023 YTD = **$807K** vs PYTD = **$1.15M** → **Down $343K** (significant early drop).  
@@ -133,7 +103,32 @@ Dashboards include **year slicers (2022, 2023, 2024)** so users can compare any 
 
 ---
 
-# 💡 Detailed and Actionable Recommendations 
+## **2. Customer Performance Dashboard**
+
+- **Customer Dashboard (top accounts, new vs returning, frequency):** ![Customer Dashboard](./customer_dashboard.png)
+  
+- **Customer base snapshot:** **947 total customers** in the dataset, **668 active** in 2023 and **279 inactive** — the inactive cohort is a clear priority for reactivation.  
+- **High average spend among actives:** active customers averaged **$19.46K each**, indicating that customers who do transact purchase at meaningful volumes.  
+- **Top-account concentration:** revenue is concentrated in a small group, **Labadie Group ($163.1K)** leads, with Hickle Group and Brown & Sons also in the top tier. This provides predictable revenue but increases exposure if a top account weakens.  
+- **Acquisition vs retention dynamics:** returning customers outnumber new customers every month (ex: Nov = 83 returning vs 11 new), which demonstrates excellent retention but underlines slow acquisition velocity.  
+- **Volatile customer growth:** months like **March (+31.9%)** and **November (+27%)** show acquisition or reactivation success, while **January (–10.1%)**, **February (–10%)**, **May (–11.9%)**, and **July (–21.5%)** reveal dips that require steadier marketing and onboarding cadence.  
+- **Frequency & loyalty:** a small cohort drives frequent purchases (Labadie Group: 13 purchases). Many mid-tier customers transact 6–9 times per year — this is the segment to nudge toward higher frequency via programs and automation.
+
+---
+
+## **3. Product Performance Dashboard**
+
+- **Product Dashboard (top SKUs, profitability, family analysis):** ![Product Dashboard](./product_dashboard.png)
+
+- **Revenue & margin balance:** product sales generated **$13.0M** and **$5.15M gross profit**, with **555.7K units sold** and **ASP ≈ $23.39**, a healthy balance of volume and price.  
+- **Top SKUs and balanced mid-tier:** **Veronica prostrata ($80.1K)** tops the list. Several others (e.g., Lecanora muralis, Vulpia microstachys, Eriogonum umbellatum) each contributed >$61K. The mid-band ($47K–$59K) provides portfolio resilience.  
+- **Size & type diversification:** small, medium, and large sizes contributed **36.61% / 29.45% / 33.93%** respectively. This balanced split reduces risk from any one format. Indoor/Outdoor/Landscape split is also near-even, proving cross-segment reach.  
+- **Profit hotspots:** lichen groups (Beard Lichen, Ward’s False G., Rim Lichen) delivered the highest gross profit per group and should be treated as high-priority margin drivers.  
+- **Family-level trends:** **Asteraceae ($1.4M)** leads, followed by Fabaceae and Poaceae. These families are anchor categories for assortment planning.
+
+---
+
+# 💡 Detailed & Actionable Recommendations 
 
 ### **1) Build a Year-Round Acquisition Engine**
 - Replace one-off campaigns with a steady monthly marketing plan.  
