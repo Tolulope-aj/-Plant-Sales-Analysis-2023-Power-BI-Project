@@ -169,7 +169,7 @@ Dashboards include **year slicers (2022, 2023, 2024)** so users can compare any 
 - Automate follow-up emails that encourage customers to reorder or refer friends.
 
 ### **8) Forecast-Led Inventory Planning**
-- Use Mar–Jun (your strongest window) to guide how you plan inventory for the year.  
+- Use the March to June peak window to guide inventory planning for the year.  
 - Keep extra stock of popular plant families ahead of peak months.  
 - Reduce holding costs by avoiding overstock of slower products and negotiating more flexible terms with suppliers.
 
